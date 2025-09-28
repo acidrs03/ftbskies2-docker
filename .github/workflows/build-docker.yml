@@ -14,9 +14,9 @@ jobs:
       uses: actions/checkout@v4
     - name: build image
       run: DOCKER_BUILDKIT=1 docker build --no-cache . --file Dockerfile -t acidrs/ftbskies2:latest |
-        docker build --no-cache . --file Dockerfile -t acidrs/ftbskies2:1.8.0
+        docker build --no-cache . --file Dockerfile -t acidrs/ftbskies2:1.9.0
     - name: push image to docker hub
       run: |
         docker login -u acidrs -p ${{ secrets.DOCKER_HUB_TOKEN }}
         docker push acidrs/ftbskies2:latest
-        docker push acidrs/ftbskies2:1.8.0
+        docker push acidrs/ftbskies2:1.9.0

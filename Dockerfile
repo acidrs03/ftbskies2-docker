@@ -25,7 +25,7 @@ WORKDIR /data
 
 EXPOSE 25565/tcp
 
-ENV MOTD="FTB Skies 2 1.8.0 Server Powered by Docker"
+ENV MOTD="FTB Skies 2 1.9.0 Server Powered by Docker"
 ENV LEVEL=world
 ENV JVM_OPTS="-Xms4096m -Xmx6144m"
 
