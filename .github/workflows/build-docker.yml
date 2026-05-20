@@ -19,4 +19,4 @@ jobs:
       run: |
         docker login -u acidrs -p ${{ secrets.DOCKER_HUB_TOKEN }}
         docker push acidrs/ftbskies2:latest
-        docker push acidrs/ftbskies2:1.15.0
+        docker push acidrs/ftbskies2:1.16.0
